@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css pages/contact.css" />
+    <script src="https://kit.fontawesome.com/cce18f0ce0.js" crossorigin="anonymous"></script>
+    <title>Contact </title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <li class="navbar-link"><a href="/homepage/homepage.html" class="navbar-anchor">Home</a></li>
+        </li>
+        <li class="navbar-link">
+          <a href="/indexpage/index.html" class="navbar-anchor">About</a>
+        </li>
+        <li class="navbar-link">
+          <a href="/servicespage/index.html" class="navbar-anchor">Services</a>
+        </li>
+          <li class="navbar-link">
+            <a href="/testimonial/testimonial.html" class="navbar-anchor">Testimonials</a>
+          </li>
+      </li>
+        <li class="navbar-link">
+          <a href="/portfolio page/portfolio.html" class="navbar-anchor"
+            >Portfolio</a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="/Contact Me/contact me.html" class="navbar-anchor"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">=</button>
+    </nav>
+    <!-- FORM -->
+    <section class="contact">
+<div class="contact-info">
+  <div class="phone">
+    <div class="p-icon"> 
+    <i class="fas fa-phone-alt"></i>
+  </div>
+    <h1>Phone</h1>
+    <p>Phone</p>
+  </div>
+  <div class="address">
+    <div class="a-icon">
+    <i class="fas fa-map-pin"></i>
+  </div>
+    <h1>Address</h1>
+    <p>Address</p>
+  </div>
+  <div class="email">
+    <div class="e-icon">
+    <i class="fas fa-envelope-square"></i>
+  </div>
+    <h1>Email</h1>
+    <p>Email</p>
+  </div>
+</div>
+</section>
+<div>
+  <section class="o-form">   
+     <form class="form"
+      action="https://formspree.io/f/xpzkwbye"
+      method="POST"
+      id="contact-form"
+   >
+      <!-- NAME -->
+       <h1 class="contact-heading">contact me</h1>
+
+      <div>
+        <label for="name" class="contact-info">name</label>
+        <input
+          type="text"
+          id="name"
+          required
+          name="name"
+          class="contact-input"
+          placeholder="full name"
+        />
+      </div> 
+      <!-- EMAIL -->
+      <div>
+        <label for="email">Your Email</label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="name@domain.com"
+          id="email"
+          class="contact-input"
+        />
+      </div>
+
+      <!-- NUMBER -->
+      <div>
+        <label for="number">phone number</label>
+        <input
+          type="text"
+          name="message"
+          required
+          placeholder="071 123 4567"
+          class="contact-input"
+        />
+      </div>
+
+      <!-- MESSAGE -->
+       <div>
+        <label for="message">message</label>
+        <input
+          type="text"
+          name="message"
+          placeholder="Type in your message"
+          class="contact-input"
+        />
+      </div>
+      <div class="button-groups">
+        <button class="button">Submit</button>
+      </div>
+    </form>
+  </section> 
+
+  </div>
+    <script src="navbar.js"></script>
+  </body>
+</html>
